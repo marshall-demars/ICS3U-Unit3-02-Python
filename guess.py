@@ -12,14 +12,13 @@ def main():
     # this uses if statements to guess a random number
 
     # input
-    integer_one = int(input("Enter integer one: "))
-    integer_two = int(input("Enter integer two: "))
+    random_number = int(input("Enter a number between 1 and 9: "))
 
-    # process
-    sum = integer_one + integer_two
-
-    # output
-    print("\nSum is {}.".format(sum))
+    # process and output
+    if random_number == constants.CHOSEN_NUMBER:
+        print("You guessed correctly!")
+    if random_number != constants.CHOSEN_NUMBER:
+        print("You guessed incorrectly.")
 
     print("\nDone.")
 
